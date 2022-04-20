@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3L/rc1XeMlwlbT+vd31JrVm4QbNe3czyQg6xEO12jRM=",
+  "Source": "Heartbeat_Api",
+  "BasePath": "_content/Heartbeat_Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

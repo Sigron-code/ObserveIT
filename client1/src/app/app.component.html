@@ -1,0 +1,35 @@
+<app-nav></app-nav>
+
+
+<div class="container" style="margin-top: 100px">
+    <ul>
+        <li *ngFor='let user of users'>{{user.id}} -- {{user.userName}}</li>
+    </ul>
+</div>
+
+
+<div class="container" style="margin-top: 50px">
+    <form #loginForm="ngForm" class="form-inline mt-2 mt-md-0" (ngSubmit)="Heartbeats()" autocomplete="off">
+        <input  name="userid"  [(ngModel)]="userId"  class="form-control mr-sm-2" 
+            type="text"   placeholder="User Id">     
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Heartbeats</button>
+    </form>
+</div>
+
+<div class="container" style="margin-top: 50px">
+    <form #loginForm="ngForm" class="form-inline mt-2 mt-md-0" (ngSubmit)="RegisteredAgents()" autocomplete="off">      
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">registered_agents</button>
+        <label style="padding-left: 20px">{{registered_agents}}</label>
+    </form>
+</div>
+
+<div class="container" style="margin-top: 50px">
+    <form #loginForm="ngForm" class="form-inline mt-2 mt-md-0" (ngSubmit)="UnRegisteredAgents()" autocomplete="off">      
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">unregistered_agents</button>
+        <label style="padding-left: 20px">{{unregistered_agents}}</label>
+    </form>
+</div>
+
+
+ 
+
